@@ -1,0 +1,20 @@
+body {
+  background-color: #666;
+  color: #fff;
+  font-size: 66.66667%;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 8rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
