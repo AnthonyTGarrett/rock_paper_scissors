@@ -94,10 +94,13 @@ h3 {
   visibility: hidden;
 }
 
+.noDisplay {
+  display: none;
+}
 
 .scores {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -112,6 +115,7 @@ button {
   background-color: aqua;
   border: none;
   border-radius: 5px;
+  margin-top: 30px;
 }
 
 button:hover {

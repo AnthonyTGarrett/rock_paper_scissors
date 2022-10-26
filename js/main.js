@@ -4,7 +4,20 @@ let computerScore = 0;
 const replayButton = document.querySelector('button');
 
 replayButton.addEventListener('click', (e) => {
+  const userChoices = document.querySelector('.user-choices');
+  const compScoreResult = document.querySelector('.computer-score');
+  const playerScoreResult = document.querySelector('.player-score');
+
+  playerScore = 0;
+  computerScore = 0;
+
+  compScoreResult.textContent = computerScore;
+  playerScoreResult.textContent = playerScore;
   
+  userChoices.classList.remove('breakIt')
+
+  replayButton.classList.add('noDisplay')
+
 })
 
 const getComputerChoice = () => {
@@ -100,7 +113,6 @@ function endGame(winner) {
   const computerResult = document.querySelector('.what-the-computer-chose');
   const roundResult = document.querySelector('.round-result');
   const userChoices = document.querySelector('.user-choices');
-  const results = document.querySelector('.results');
 
 
   computerResult.classList.add('hide');
@@ -112,8 +124,7 @@ function endGame(winner) {
 
   userChoices.classList.add('breakIt');
 
-  const replayButton = document.createElement('button');
-  replayButton.textContent = "Play Again?";
-  results.insertBefore(replayButton, results.children[1])
+
+  replayButton.classList.remove('noDisplay')
 }
 
